@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+WWW.ARNELLE.COM
+Witch, Witch, Broom
+Arnelle Comrie , October 2026
+
+Inspired by Janell Baxter's duck game and web dev club
+// -->
+
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spooky Season Games</title>
+ <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="witchdiv.css">
+ <link rel="stylesheet" href="design.css">
+ <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+
+<body>
+  <nav>
+    <button data-page="guess" class="active">Guess</button>
+    <button data-page="boil">Boil</button>
+    <button data-page="escape">Escape</button>
+  </nav>
+
+  <div id="guess" class="page active">
+          <h1>WITCHY WITCH GUESSING</h1>
+
+          <p>How many hats do you think there are? Enter a number between 1 and 10.</p>
+          
+          <label for="playerGuess">Your guess: </label>
+          <input 
+          type="number" 
+          id="playerGuess" 
+          min="1"
+          max="10"
+          placeholder="Enter your guess..."/> 
+
+          <button id="submitGuess">Submit Guess!</button>
+          <p id="result"></p>
+          <div id="witchContainer"></div>
+
+  </div>
+
+<!-- BOIL GAME -->
+
+<div id="boil" class="page">
+  <h1>WITCH'S POTION CHALLENGE</h1>
+
+  <p>How many newts do you need to finish the potion?</p>
+
+  <!-- CHANGE 1: Cauldron image shown before the guess -->
+  <img
+    id="cauldronImage"
+    src="spell-cauldron.gif"
+    alt="A magical spell cauldron"
+    class="boil-image"
+  >
+
+
+  <!-- CHANGE 2: Separate input for the Boil game -->
+  <label for="newtGuess">Your newt guess:</label>
+
+  <input
+    type="number"
+    id="newtGuess"
+    min="1"
+    max="20"
+    placeholder="Enter a number from 1 to 20"
+  >
+
+  <button id="submitBoilGuess">Add Newts!</button>
+
+  <!-- CHANGE 3: Newt image appears after guessing -->
+  <div id="newtContainer"></div>
+
+  <!-- CHANGE 4: Potion test image appears with the results -->
+  <div id="potionContainer"></div>
+
+  <div class="box">Box</div>
+
+  <p id="boilResult" aria-live="polite"></p>
+
+</div>
+
+  <div id="escape" class="page">
+            <h1>Welcome to the Witch's Broom Escape!</h1>
+            
+            
+<!-- ESCAPE GAME -->
+<div id="escape" class="page">
+
+  <h1>Can you Escape?</h1>
+
+  <p>
+    Fly through the haunted maze on your witch's broom!
+    Avoid spooky ghosts and pumpkin-bomb booby traps
+    to reach the exit.
+  </p>
+
+  <!-- Game instructions -->
+  <p>
+    Use the arrow keys or WASD to move.
+    Don't touch the ghosts or pumpkin bombs!
+  </p>
+
+  <!-- Maze game -->
+  <div id="maze" aria-label="Haunted maze game"></div>
+
+  <p id="escapeResult" aria-live="polite">
+    Find the exit to escape!
+  </p>
+
+  <button id="restartEscape">Play Again</button>
+
+</div>
+
+            
+  </div>
+
+<script src="script.js"></script>
+<script src="witchwitchbroom.js"></script>
+<script src="boil.js"></script>
+<script src="escape.js"></script>
+</body>
+
+
+
+</html>

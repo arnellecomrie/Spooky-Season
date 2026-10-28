@@ -1,0 +1,71 @@
+body {
+ font-family: 'spookyfont', Courier, monospace;
+ background-color: #E08E45;
+ text-align: center;
+ margin: 0 auto; 
+}
+
+h1 {
+ color: #6B2737;
+          transform: scale(2.5);
+
+opacity: 1;
+/* filter: blur(0); */
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+h1:hover{
+ opacity: 0;
+
+}
+
+@font-face {
+  font-family: 'spookyfont';
+  src: url('ShadowsFright.ttf');
+}
+
+@font-face {
+  font-family: 'Typewriter';
+  src: url('Typewriter-Black.ttf');
+}
+
+p{
+  font-family: 'Typewriter';
+}
+
+button{
+  transform: rotate(5deg);
+   background: #2db34a;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+button:hover{
+  background: #ff7b29;
+}
+
+#result {
+ font-weight: bold;
+ color: #6B2737;
+ font-family: 'Courier New', Courier, monospace, sans-serif;
+ font-size: 60px;
+ text-align: center;
+}
+
+.witch-hat {  
+  padding: 10px;  
+  background-color: #297045;  
+  width: 200px;  
+  height: 200px;  
+  border-radius: 10%;
+  border-right: solid 4px #297045;
+  border-bottom: solid 4px #297045;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,156 @@
+body {
+ font-family: 'spookyfont', Courier, monospace;
+ background-color: #E08E45;
+ text-align: center;
+ margin: 0 auto; 
+}
+
+h1 {
+ color: #6B2737;
+          transform: scale(2.5);
+
+opacity: 1;
+/* filter: blur(0); */
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+h1:hover{
+ opacity: 0;
+
+}
+
+@font-face {
+  font-family: 'spookyfont';
+  src: url('ShadowsFright.ttf');
+}
+
+@font-face {
+  font-family: 'Typewriter';
+  src: url('Typewriter-Black.ttf');
+}
+
+p{
+  font-family: 'Typewriter';
+}
+
+button{
+  transform: rotate(5deg);
+   background: #2db34a;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+button:hover{
+  background: #ff7b29;
+}
+
+#result {
+ font-weight: bold;
+ color: #6B2737;
+ font-family: 'Courier New', Courier, monospace, sans-serif;
+ font-size: 60px;
+ text-align: center;
+}
+
+.newt {  
+  padding: 10px;  
+  background-color: #297045;  
+  width: 50px;  
+  height: 50px;  
+  border-radius: 10%;
+  border-right: solid 4px #297045;
+  border-bottom: solid 4px #297045;
+}
+
+.box {
+  background: #571F4E;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+.box:hover {
+  background: #ff7b29;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* WITCH'S BROOM ESCAPE */
+
+#escape {
+  text-align: center;
+  color: #0e0e0e;
+}
+
+#maze {
+  display: grid;
+  justify-content: center;
+  gap: 2px;
+  margin: 20px auto;
+  width: max-content;
+  background: #171020;
+  padding: 8px;
+  border: 3px solid #8c52ff;
+  border-radius: 8px;
+}
+
+.maze-cell {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.maze-cell.wall {
+  background: #263323;
+}
+
+.maze-cell.path {
+  background: #30233d;
+}
+
+.maze-cell.player {
+  background: #533b83;
+}
+
+.maze-cell.ghost {
+  background: #492c55;
+}
+
+.maze-cell.bomb {
+  background: #702626;
+}
+
+.maze-cell.exit {
+  background: #285e35;
+}
+
+#restartEscape {
+  padding: 10px 18px;
+  background: #6c3296;
+  color: rgb(8, 8, 8);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#restartEscape:hover {
+  background: #8b4cba;
+}

@@ -1,0 +1,72 @@
+/* 
+WWW.ARNELLE>COM
+Crazy, Messy, Fun!
+Arnelle Comrie, October 2026
+Inspired by Janell Baxter
+*/
+
+body {
+
+ /* see https://developer.mozilla.org/en-US/docs/Web/CSS/font for more about fonts */
+ /* also https://fonts.google.com for additional fonts */
+
+      font-family: Arial, sans-serif;
+      background-color: #FFCFD2;
+      text-align: center;
+      color: #000;
+      margin: 1.5;
+      padding: 2.5;
+    }
+
+/*==========navigation============== */
+
+    nav {
+      background-color: #CA5310;
+      padding: 10px 0;
+     /*flexible box layout see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout */
+      display: flex;
+     /* align items along the main axis of a flex container */
+     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+      justify-content: center;
+
+     /*define the spacing between rows and columns in layout models */
+     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/gap*/
+      gap: 10px;
+    }
+
+/* default navigation */
+    nav button {
+      background-color: #83695E;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+        
+     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius*/
+      border-radius: 5px;
+    }
+
+/* navigation button hover style */
+    nav button:hover {
+      background-color: #81C14B;
+    }
+
+/* active page button */
+    nav button.active {
+      background-color: #3D0B37;
+    }
+
+div {
+    text-align: center;
+}
+
+/*==========content============== */
+    .page {
+      display: none;
+      padding: 40px;
+    }
+
+    .page.active {
+      display: block;
+    }
