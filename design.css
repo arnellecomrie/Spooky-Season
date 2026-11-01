@@ -154,3 +154,40 @@ button:hover{
 #restartEscape:hover {
   background: #8b4cba;
 }
+
+
+
+/* Witch's broom cursor */
+html,
+body {
+  cursor: url("broom.png") 32 32, auto;
+}
+
+/* Keep the broom cursor on buttons and inputs */
+button,
+input,
+a {
+  cursor: url("broom.png") 32 32, auto !important;
+}
+
+/* HALLOWEEN MUSIC CONTROLS */
+
+#musicControls {
+  margin: 15px auto;
+  text-align: center;
+}
+
+#musicButton {
+  background-color: #571F4E;
+  color: white;
+  border: 2px solid #8c52ff;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-family: 'Typewriter', monospace;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#musicButton:hover {
+  background-color: #8b4cba;
+}
